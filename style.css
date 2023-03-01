@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+}
+
+body, .btn, label, select, input, textarea, h4, h5, h6 {
+    font-family: "Roboto", "Arial","sans-serif";
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 1177px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #e8bda1;
+}
+
+.wrapper::before {
+    content: '';
+    display: block;
+    height: 552px;
+    margin-top: 0;
+    background-color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 838px;
+    min-height: 205px;
+    margin: -504px auto 0;
+    padding: 10px;
+}
+
+.heading {
+    display: block;
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+}
+
+h2 {
+    color: #e8bda1;
+    font-size: calc(24px + 24*((100vw)/(1900-320)));
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.block-img__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px auto 0;
+    padding: 40px;
+}
+
+.block-img {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center;
+    gap: 40px;
+    max-width: 1140px;
+}
+
+.block-img-wrapper {
+    flex-basis: 353px;
+    max-height: auto;
+    flex-grow: 1;
+    overflow: hidden;
+    transition: all ease .2s;
+}
+
+.block-img1-item {
+  width: 100%;
+  transition: all ease .3s;
+}
+
+.block-img-wrapper:hover {
+    background-color: black;
+}
+
+img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: opacity(80%);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+    height: 10vh;
+    background-color: #333;
+    color: bisque;
+}
+ 
+.footer a {
+    color: rgb(193, 193, 252);
+}
+
+.footer a:hover{
+    color: rgb(125, 125, 158);
+    text-decoration: none;
+}
+
+.section-text {
+    text-align: center;
+    font-style: italic;
+    margin: 42px auto 60px;
+}
+
+.text-ref {
+    color: inherit;
+    text-decoration: none;
+}
+
+.text-ref:hover {
+    padding-bottom: 2px;
+    border-bottom: 1px solid black;
+}
+
+
+@media (max-width:300px) {
+    .block-img {
+        gap: 20px;
+    }
+
+    .block-img__wrapper {
+        padding: 20px;
+    }
+
+    .section-text {
+        text-align: center;
+        font-style: italic;
+        margin: 0px auto 20px;
+        padding: 10px;
+    }
+}
